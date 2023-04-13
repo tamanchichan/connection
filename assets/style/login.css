@@ -1,7 +1,95 @@
 @import url('./reset.css');
 
+:root {
+  --dark-blue: #0172b4;
+  --light-blue: #c0dcf3;
+  --white: #fff;
+}
+
 /* class */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
+}
+
+.login {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.sign-up {
+  background-color: var(--white);
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+
+.fixed {
+  background-image: url('../image/background-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  inset: 0px auto auto 0px;
+  position: fixed;
+  width: 400px;
+}
+
+/* main */
+main {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+main .fixed h1 {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 400;
+  inset: 20px auto auto 40px;
+  letter-spacing: 5px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main h2 {
+  color: var(--dark-blue);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+main input {
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  display: block;
+  font-size: 20px;
+  height: 45px;
+  margin: 15px 0px;
+  padding: 5px 10px;
+}
+
+main input::placeholder {
+  color: var(--dark-blue);
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+main p {
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+main .buttons button {
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
 }
