@@ -2,6 +2,8 @@
 
 :root {
   --dark-blue: #0172b4;
+  --grey: #7e7e7e;
+  --light-blue: #c0dcf3;
   --white: #fff;
   --white-alt: #f2f4f6;
 }
@@ -16,6 +18,32 @@ body {
   color: var(--dark-blue);
 }
 
+.column {
+  margin-top: 50px;
+}
+
+.column-1 {
+  height: max-content;
+  margin: 0px 40px;
+  width: 20%;
+}
+.column-2 {
+  height: 500px;
+  margin: 0px 20px;
+  width: 60%
+}
+.column-3 {
+  height: 500px;
+  margin: 0px 40px;
+  width: 20%;
+}
+
+.column-1, .column-2, .column-3 {
+  background-color: #fff;
+  border: 1px solid rgba(126, 126, 126, 0.25);
+  border-radius: 5px;
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
@@ -26,11 +54,13 @@ body {
 }
 
 .user-ico {
+  background-image: url('../image/user.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid rgba(126, 126, 126, 0.5);
   border-radius: 50%;
-  height: 40px;
-  margin-top: 5px;
-  width: 40px;
+  cursor: pointer;
 }
 
 /* header */
@@ -65,3 +95,40 @@ header nav ul li {
 header nav ul li + li {
   margin-left: 15px;
 }
+
+header .user-ico {
+  height: 40px;
+  margin-top: 5px;
+  width: 40px;
+}
+
+/* main */
+main .column-1 {
+  text-align: center;
+}
+
+main .column-1 .user-ico {
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 120px;
+}
+
+main .column-1 .username {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+main .column-1 .profession {color: var(--grey);}
+
+main .column-1 .city {color: var(--grey);}
+
+main .column-1 .connections {
+  border-top: 1px solid rgba(126, 126, 126, 0.25);
+  cursor: pointer;
+  margin-top: 50px;
+  padding: 10px 0px;
+}
+
+main .column-1 .connections p + p {color: var(--grey);}
