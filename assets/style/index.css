@@ -1,7 +1,67 @@
 @import url('./reset.css');
 
+:root {
+  --dark-blue: #0172b4;
+  --white: #fff;
+  --white-alt: #f2f4f6;
+}
+
+/* html */
+body {
+  background-color: var(--white-alt);
+}
+
 /* class */
+.active {
+  color: var(--dark-blue);
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
+}
+
+.flex {
+  display: flex;
+}
+
+.user-ico {
+  border: 1px solid rgba(126, 126, 126, 0.5);
+  border-radius: 50%;
+  height: 40px;
+  margin-top: 5px;
+  width: 40px;
+}
+
+/* header */
+header {
+  background-color: var(--white);
+  border-bottom: 1px solid rgba(126, 126, 126, 0.5);
+  height: 50px;
+  line-height: 50px;
+}
+
+header .flex {
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+header nav {
+  font-size: 0px;
+}
+
+header nav ul li {
+  cursor: pointer;
+  display: inline;
+  font-size: 20px;
+}
+
+header nav ul li + li {
+  margin-left: 15px;
 }
