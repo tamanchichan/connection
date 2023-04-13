@@ -5,6 +5,7 @@
   --light-blue: #c0dcf3;
   --red: #f00;
   --white: #fff;
+  --white-alt: #f2f4f6;
 }
 
 /* class */
@@ -43,14 +44,15 @@
 
 .wrong-password {
   color: var(--red);
-  font-size: 15px;
+  cursor: default;
   font-weight: 500;
   height: 20px;
-  margin: 10px 0px;
+  margin-top: 10px;
 }
 
 /* main */
 main {
+  background-color: var(--white-alt);
   display: grid;
   height: 100vh;
   place-content: center;
@@ -94,11 +96,13 @@ main p {
   cursor: pointer;
   font-size: 15px;
   margin-top: -10px;
+  width: max-content;
 }
 
 main .buttons button {
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
+  letter-spacing: 2px;
   padding: 10px 20px;
 }
