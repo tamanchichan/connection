@@ -3,6 +3,7 @@
 :root {
   --dark-blue: #0172b4;
   --light-blue: #c0dcf3;
+  --red: #f00;
   --white: #fff;
 }
 
@@ -38,6 +39,14 @@
   inset: 0px auto auto 0px;
   position: fixed;
   width: 400px;
+}
+
+.wrong-password {
+  color: var(--red);
+  font-size: 15px;
+  font-weight: 500;
+  height: 20px;
+  margin: 10px 0px;
 }
 
 /* main */
