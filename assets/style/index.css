@@ -25,17 +25,17 @@ body {
 .column-1 {
   height: max-content;
   margin: 0px 40px;
-  width: 20%;
+  width: 25%;
 }
 .column-2 {
   height: 500px;
   margin: 0px 20px;
-  width: 60%
+  width: 50%
 }
 .column-3 {
-  height: 500px;
+  /* height: 500px; */
   margin: 0px 40px;
-  width: 20%;
+  width: 25%;
 }
 
 .column-1, .column-2, .column-3 {
@@ -103,9 +103,7 @@ header .user-ico {
 }
 
 /* main */
-main .column-1 {
-  text-align: center;
-}
+main .column-1 {text-align: center;}
 
 main .column-1 .user-ico {
   height: 120px;
@@ -114,8 +112,9 @@ main .column-1 .user-ico {
   width: 120px;
 }
 
-main .column-1 .username {
+main .column-1 .user-name {
   font-size: 20px;
+  font-weight: 500;
   letter-spacing: 2px;
   margin-top: 10px;
 }
@@ -131,4 +130,57 @@ main .column-1 .connections {
   padding: 10px 0px;
 }
 
-main .column-1 .connections p + p {color: var(--grey);}
+main .column-1 .connections p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main .column-1 .connections p + p {
+  color: var(--grey);
+  font-size: 15px;
+}
+
+main .column-3 {text-align: center;}
+
+main .column-3 h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+
+main .column-3 .users {
+  border-top: 1px solid rgba(126, 126, 126, 0.25);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+main .column-3 .users-ico {
+  /* background-image: url('../image/user.jpg'); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid rgba(126, 126, 126, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  margin-right: 15px;
+  width: 50px;
+}
+
+main .column-3 .users-name {letter-spacing: 1.25px;}
+
+main .column-3 .users-city {
+  color: var(--grey);
+  letter-spacing: 1.5px;
+}
+
+main .column-3 button {
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  color: var(--dark-blue);
+  font-size: 25px;
+  height: 40px;
+  margin-top: 5px;
+  width: 40px;
+}
