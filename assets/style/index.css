@@ -38,7 +38,7 @@ body {
   width: 25%;
 }
 
-.column-1, .column-2, .column-3 {
+.column-1, .column-3 {
   background-color: #fff;
   border: 1px solid rgba(126, 126, 126, 0.25);
   border-radius: 5px;
@@ -49,9 +49,40 @@ body {
   width: min(100% - 30px, 1080px);
 }
 
-.flex {
-  display: flex;
+.date {font-size: 15px;}
+
+.flex {display: flex;}
+
+.img {margin: 10px 0px;}
+
+.post {
+  background-color: var(--white);
+  border-radius: 10px;
+  margin: 30px 0px;
+  padding: 10px;
 }
+
+.post-box {
+  background-color: var(--white);
+  border: 1px solid rgba(126, 126, 126, 0.25);
+  border-radius: 5px;
+  padding: 40px 40px 20px 40px;
+}
+
+.post-header {
+  font-size: 0px;
+  height: 50px;
+  justify-content: space-between;
+  line-height: 50px;
+}
+
+.post-header-column-1 {display: flex;}
+
+.post-header-column-2 {display: flex;}
+
+.post-main {margin: 20px 0px;}
+
+.text {margin: 10px 0px;}
 
 .user-ico {
   background-image: url('../image/user.jpg');
@@ -61,6 +92,12 @@ body {
   border: 1px solid rgba(126, 126, 126, 0.5);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.username {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
 /* header */
@@ -102,7 +139,7 @@ header .user-ico {
   width: 40px;
 }
 
-/* main */
+/* main column 1 */
 main .column-1 {text-align: center;}
 
 main .column-1 .user-ico {
@@ -140,6 +177,43 @@ main .column-1 .connections p + p {
   font-size: 15px;
 }
 
+/* main column 2 */
+main .column-2 .post-box textarea {
+  font-size: 20px;
+  height: 100px;
+  resize: none;
+  width: 100%;
+}
+
+main .column-2 .flex {justify-content: space-between;}
+
+main .column-2 .post-box .input-img {
+  height: 40px;
+}
+
+main .column-2 .post-box .input-img input[type='file'] {display: none;}
+
+main .column-2 .post-box .input-img label i {
+  cursor: pointer;
+  font-size: 40px;
+  margin-right: 10px;
+  line-height: 40px;
+}
+
+main .column-2 .post-box .button button {
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+  color: var(--white);
+  line-height: 40px;
+  width: 80px;
+}
+
+
+main .column-2 .content .post .post-header .post-header-column-1 .user-ico {
+  height: 40px;
+  width: 40px;
+}
+/* main column 3 */
 main .column-3 {text-align: center;}
 
 main .column-3 h2 {
