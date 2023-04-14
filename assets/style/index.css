@@ -2,52 +2,17 @@
 
 :root {
   --dark-blue: #0172b4;
-  --grey: #7e7e7e;
   --light-blue: #c0dcf3;
+  --red: #f00;
   --white: #fff;
   --white-alt: #f2f4f6;
 }
 
-/* html */
-body {
-  background-color: var(--white-alt);
-}
-
-/* animation */
-@keyframes opacity {
-  from {opacity: 25%}
-  to {opacity: 100%}
-}
-
 /* class */
-.active {
-  color: var(--dark-blue);
-}
-
-.column {
-  margin-top: 50px;
-}
-
-.column-1 {
-  height: max-content;
-  margin: 0px 40px;
-  width: 25%;
-}
-.column-2 {
-  height: 500px;
-  margin: 0px 20px;
-  width: 50%
-}
-.column-3 {
-  /* height: 500px; */
-  margin: 0px 40px;
-  width: 25%;
-}
-
-.column-1, .column-3 {
-  background-color: #fff;
-  border: 1px solid rgba(126, 126, 126, 0.25);
-  border-radius: 5px;
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 .container {
@@ -55,264 +20,89 @@ body {
   width: min(100% - 30px, 1080px);
 }
 
-.date {font-size: 15px;}
+.login {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
 
-.flex {display: flex;}
-
-.img {margin: 10px 0px;}
-
-.post {
+.sign-up {
   background-color: var(--white);
-  border-radius: 10px;
-  margin: 30px 0px;
-  padding: 10px;
-}
-
-.post-box {
-  background-color: var(--white);
-  border: 1px solid rgba(126, 126, 126, 0.25);
-  border-radius: 5px;
-  padding: 40px 40px 20px 40px;
-}
-
-.post-header {
-  font-size: 0px;
-  height: 50px;
-  justify-content: space-between;
-  line-height: 50px;
-}
-
-.post-header-column-1 {display: flex;}
-
-.post-header-column-2 {display: flex;}
-
-.post-main {margin: 20px 0px;}
-
-.text {margin: 10px 0px;}
-
-.user-ico {
-  background-image: url('../image/user.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid rgba(126, 126, 126, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.user-info {
-  animation: opacity 0.25s ease-in;
-  display: none;
-  background-color: var(--white);
-  border: 1px solid rgba(126, 126, 126, 0.25);
-  border-radius: 5px;
-  color: var(--user-info-color);
-  inset: 75px 50px auto auto;
-  padding: 25px;
-  position: fixed;
-}
-
-.username {
-  font-size: 15px;
-  font-weight: 600;
-  margin-left: 10px;
-}
-
-/* header */
-header {
-  background-color: var(--white);
-  border-bottom: 1px solid rgba(126, 126, 126, 0.5);
-  height: 50px;
-  line-height: 50px;
-}
-
-header .flex {
-  justify-content: space-between;
-}
-
-header h1 {
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-header nav {
-  font-size: 0px;
-}
-
-header nav ul li {
-  cursor: pointer;
-  display: inline;
-  font-size: 20px;
-  transition: color 0.25s ease-in-out;
-}
-
-header nav ul li:hover {
+  border: 1px solid var(--dark-blue);
   color: var(--dark-blue);
 }
 
-header nav ul li + li {
-  margin-left: 15px;
+.fixed {
+  background-image: url('../image/background-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  inset: 0px auto auto 0px;
+  position: fixed;
+  width: 400px;
 }
 
-header .user-ico {
-  height: 40px;
-  margin-top: 5px;
-  width: 40px;
-}
-
-/* main column 1 */
-main .column-1 {text-align: center;}
-
-main .column-1 .user-ico {
-  height: 120px;
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 120px;
-}
-
-main .column-1 .user-name {
-  font-size: 20px;
+.wrong-password {
+  color: var(--red);
+  cursor: default;
   font-weight: 500;
-  letter-spacing: 2px;
+  height: 20px;
   margin-top: 10px;
 }
 
-main .column-1 .profession {color: var(--grey);}
-
-main .column-1 .city {color: var(--grey);}
-
-main .column-1 .connections {
-  border-top: 1px solid rgba(126, 126, 126, 0.25);
-  cursor: pointer;
-  margin-top: 50px;
-  padding: 10px 0px;
+/* main */
+main {
+  background-color: var(--white-alt);
+  display: grid;
+  height: 100vh;
+  place-content: center;
 }
 
-main .column-1 .connections p {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-main .column-1 .connections p + p {
-  color: var(--grey);
-  font-size: 15px;
-}
-
-/* main column 2 */
-main .column-2 .post-box textarea {
-  font-size: 20px;
-  height: 100px;
-  resize: none;
-  width: 100%;
-}
-
-main .column-2 .flex {justify-content: space-between;}
-
-main .column-2 .post-box .input-img {
-  height: 40px;
-}
-
-main .column-2 .post-box .input-img input[type='file'] {display: none;}
-
-main .column-2 .post-box .input-img label i {
-  cursor: pointer;
-  font-size: 40px;
-  margin-right: 10px;
-  line-height: 40px;
-}
-
-main .column-2 .post-box .button button {
-  background-color: var(--dark-blue);
-  border-radius: 5px;
+main .fixed h1 {
   color: var(--white);
-  line-height: 40px;
-  width: 80px;
-}
-
-
-main .column-2 .content .post .post-header .post-header-column-1 .user-ico {
-  height: 40px;
-  width: 40px;
-}
-/* main column 3 */
-main .column-3 {text-align: center;}
-
-main .column-3 h2 {
-  font-size: 20px;
-  font-weight: 500;
-  padding: 20px 0px;
-}
-
-main .column-3 .users {
-  border-top: 1px solid rgba(126, 126, 126, 0.25);
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 20px;
-}
-
-main .column-3 .users-ico {
-  /* background-image: url('../image/user.jpg'); */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid rgba(126, 126, 126, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  height: 50px;
-  margin-right: 15px;
-  width: 50px;
-}
-
-main .column-3 .users-name {letter-spacing: 1.25px;}
-
-main .column-3 .users-city {
-  color: var(--grey);
-  letter-spacing: 1.5px;
-}
-
-main .column-3 button {
-  background-color: var(--light-blue);
-  border-radius: 50%;
-  color: var(--dark-blue);
-  font-size: 25px;
-  height: 40px;
-  margin-top: 5px;
-  width: 40px;
-}
-
-/* footer */
-footer {
-  align-items: center;
-  background-color: var(--white);
-  border-top: 1px solid rgba(126, 126, 126, 0.5);
-  display: flex;
-  height: 150px;
-  margin-top: 50px;
-  text-align: center;
-}
-
-footer h1 {
   font-size: 30px;
   font-weight: 400;
+  inset: 20px auto auto 40px;
   letter-spacing: 5px;
+  position: absolute;
+  text-align: center;
   text-transform: uppercase;
 }
 
-footer h2 {
-  font-size: 25px;
-  font-weight: 500;
-  letter-spacing: 2.5px;
+main h2 {
+  color: var(--dark-blue);
+  font-size: 40px;
+  font-weight: 400;
 }
 
-footer p {
-  cursor: pointer;
+main input {
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  display: block;
   font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 2px;
+  height: 45px;
+  margin: 15px 0px;
+  padding: 5px 10px;
 }
 
-footer .container .flex {justify-content: space-between;}
+main input::placeholder {
+  color: var(--dark-blue);
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
 
-footer .container .contact .flex p + p {margin-left: 15px;}
+main p {
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: -10px;
+  width: max-content;
+}
+
+main .buttons button {
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+}

@@ -16,84 +16,24 @@
     <title></title>
   </head>
   <body>
-    <header>
-      <div class='container flex'>
-        <h1>Connection</h1>
-        <nav>
-          <ul>
-            <li class='active'>Home</li>
-            <li>Connections</li>
-            <li>Messages</li>
-            <li>Notifications</li>
-            <li>Settings</li>
-          </ul>
-        </nav>
-        <div class='user-ico'></div>
-      </div>
-    </header>
+    <!-- <header><div class='container'></div></header> -->
     <main>
-      <div class='user-info'></div>
-      <div class='column flex'>
-        <div class='column-1'>
-          <div class='user-ico'></div>
-          <div class='user-name'></div>
-          <div class='profession'></div>
-          <div class='city'></div>
-          <div class='connections'>
-            <p>369</p>
-            <p>Connections</p>
-          </div>
+      <div class='container'></div>
+      <div>
+        <div class='fixed'>
+          <h1>Connection</h1>
         </div>
-        <div class='column-2'>
-          <div class='post-box'>
-            <textarea class='text-area'maxlength='300' placeholder="What's new?"></textarea>
-            <div class='flex'>
-              <div class='input-img flex'>
-                <input type='file' id='imgFile' accept='image/*'>
-                <label for='imgFile'>
-                  <i class="fa-solid fa-image" style="color: #bdbdbd;"></i>
-                </label>
-                <p class='file-name'></p>
-              </div>
-              <div class='button'>
-                <button type='button'>Post</button>
-              </div>
-            </div>
-          </div>
-          <div class='content'></div>
-        </div>
-        <div class='column-3'>
-          <h2>People you may know</h2>
-          <!-- <div class='users'>
-            <div class='users-ico'></div>
-            <div class='users-info'>
-              <div class='users-name'></div>
-              <div class='users-city'></div>
-            </div>
-            <div>
-              <button type='button'>+</button>
-            </div>
-          </div> -->
+        <h2>Welcome</h2>
+        <input type='text' placeholder='username' class='username'>
+        <input type='text' placeholder='password' class='password'>
+        <p>Forgot password?</p>
+        <p class='wrong-password'></p>
+        <div class='buttons'>
+          <button type='button' class='login'>Login</button>
+          <button type='button' class='sign-up'>Sign up</button>
         </div>
       </div>
     </main>
-    <footer>
-      <div class='container'>
-        <div><h1>Connection</h1></div>
-        <div class='flex'>
-          <div class='location'>
-            <h2>Location</h2>
-            <p>123 Street</p>
-          </div>
-          <div class='contact'>
-            <h2>Contact</h2>
-            <div class='flex'>
-              <p>(123) 456 7890</p>
-              <p>connections@email.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <!-- <footer><div class='container'></div></footer> -->
   </body>
 </html>
