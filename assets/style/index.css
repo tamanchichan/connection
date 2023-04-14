@@ -281,3 +281,38 @@ main .column-3 button {
   margin-top: 5px;
   width: 40px;
 }
+
+/* footer */
+footer {
+  align-items: center;
+  background-color: var(--white);
+  border-top: 1px solid rgba(126, 126, 126, 0.5);
+  display: flex;
+  height: 150px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+footer h2 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+}
+
+footer p {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+footer .container .flex {justify-content: space-between;}
+
+footer .container .contact .flex p + p {margin-left: 15px;}
