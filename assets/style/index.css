@@ -13,6 +13,12 @@ body {
   background-color: var(--white-alt);
 }
 
+/* animation */
+@keyframes opacity {
+  from {opacity: 25%}
+  to {opacity: 100%}
+}
+
 /* class */
 .active {
   color: var(--dark-blue);
@@ -94,6 +100,18 @@ body {
   cursor: pointer;
 }
 
+.user-info {
+  animation: opacity 0.25s ease-in;
+  display: none;
+  background-color: var(--white);
+  border: 1px solid rgba(126, 126, 126, 0.25);
+  border-radius: 5px;
+  color: var(--user-info-color);
+  inset: 75px 50px auto auto;
+  padding: 25px;
+  position: fixed;
+}
+
 .username {
   font-size: 15px;
   font-weight: 600;
@@ -127,6 +145,11 @@ header nav ul li {
   cursor: pointer;
   display: inline;
   font-size: 20px;
+  transition: color 0.25s ease-in-out;
+}
+
+header nav ul li:hover {
+  color: var(--dark-blue);
 }
 
 header nav ul li + li {
