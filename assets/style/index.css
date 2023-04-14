@@ -226,7 +226,7 @@ main .column-3 .users {
   border-top: 1px solid rgba(126, 126, 126, 0.25);
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 main .column-3 .users-ico {

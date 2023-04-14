@@ -159,7 +159,7 @@ userIco.addEventListener('click', () => {
 });
 
 // column-3
-const url = 'https://randomuser.me/api/?nat=ca&results=7';
+const url = 'https://randomuser.me/api/?nat=ca&results=10';
 const options = {
   method: 'GET',
   headers: {
