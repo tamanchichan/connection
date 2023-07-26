@@ -13,7 +13,7 @@ login.addEventListener('click', () => {
     username.value === localStorage.getItem('username') &&
     password.value === localStorage.getItem('password')
   ) {
-    location.href = 'index.html';
+    location.href = 'homepage.html';
   } else {
     wrongPassword.innerText = 'wrong username/password';
     setTimeout(() => {
